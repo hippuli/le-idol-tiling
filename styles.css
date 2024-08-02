@@ -115,3 +115,13 @@ body {
 #solve-btn:hover {
   background-color: #0056b3;
 }
+
+.message {
+  margin-top: 1em;
+  padding: 0.5em;
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+  max-width: 300px; /* To ensure text doesn't stretch too much */
+  word-wrap: break-word; /* To wrap text nicely */
+}
