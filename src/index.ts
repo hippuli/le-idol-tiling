@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initializeGridHtml(grid);
   initializePiecesHtml(pieces);
 
+  // create lookup table
   initializeLookupTables(pieces);
   
   document.getElementById('solve-btn')?.addEventListener('click', () => {
