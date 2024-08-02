@@ -27,12 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
       if (solved) {
         // update the ui
         updateGridUi();
+
+        document.getElementById('message')!.innerHTML = 'Solution found';
       }
       else {
         console.log('No solution found');
+
+        document.getElementById('message')!.innerHTML = 'No Solution found';
       }
     } catch (e) {
       console.error(e);
+
+      const userFriendlyMessage = e instanceof Error ? e.message : 'An unexpected error occurred';
+      document.getElementById('message')!.innerHTML = `Error: ${userFriendlyMessage}`;
+      
       return;  
     }
   });
